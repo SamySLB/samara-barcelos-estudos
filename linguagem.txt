@@ -1,1 +1,3 @@
 A linguagem que eu mais gosto é Javascript
+
+Mas eu odeio Python
