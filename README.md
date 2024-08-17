@@ -184,3 +184,10 @@ Requisitos mínimos de segurança:
 - capacitação das pessoas
 
 [html e css](https://www.notion.so/html-e-css-c114f198972e45449874f2b2a30a31aa?pvs=21)
+
+git init- cria o repositório
+git add - adiciona ao repositorio
+git commit - salva o que foi alterado
+git push - envia para o repositorio remoto
+git checkout- sai da branch atual
+git branch- cria uma branch
