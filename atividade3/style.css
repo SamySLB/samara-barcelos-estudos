@@ -1,0 +1,13 @@
+body{
+    background-color: bisque;
+}
+h1{
+    padding: 20px;
+    margin:20px;
+    text-align: center;
+    background-color: antiquewhite;
+    color:brown;
+}
+.lista{
+    color:black;
+}
