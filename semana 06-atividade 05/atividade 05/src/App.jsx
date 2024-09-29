@@ -10,14 +10,16 @@ function ShowPiadas() {
     const[ApagarPiada,setApagarPiada] = useState(null)
 
     function DeletarPiada(id){
-      console.log(id)
-      const delectPiada = piadas.findIndex(piada=>
-      Number( piada.id) === Number(id)
-      )
-      console.log(delectPiada)
-      if(delectPiada != -1){
-        piadas.splice(delectPiada,1)
-      }
+      // console.log(id)
+      // const delectPiada = piadas.findIndex(piada=>
+      // Number( piada.id) === Number(id)
+      // )
+      // console.log(delectPiada)
+      // if(delectPiada != -1){
+      //   piadas.splice(delectPiada,1)
+      // }
+      const novasPiadas = piadas.filter((piada) => Number(piada.id) !== Number(id));
+      setPiadas(novasPiadas)
     }
 
   
@@ -67,7 +69,7 @@ function ShowPiadas() {
         onBlur={(e) => setApagarPiada(e.target.value)}
         placeholder="Escreva um número"
       />
-    <button id="DeletarPiada" onClick={DeletarPiada(ApagarPiada)} >Deletar</button>
+    <button id="DeletarPiada" onClick={()=> DeletarPiada(ApagarPiada)} >Deletar</button>
        
       <article>
         <h2>---Piadas---</h2>
